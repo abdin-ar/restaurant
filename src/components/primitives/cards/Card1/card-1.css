@@ -9,6 +9,11 @@
   max-width: var(--max-width);
 }
 
+.card-1:hover .img,
+.card-1:focus .img {
+  transform: scale(1.2);
+}
+
 .card-1::before {
   content: "";
   position: absolute;
@@ -37,6 +42,7 @@
 .card-1 .img {
   width: 90%;
   margin: 0 auto;
+  transition: var(--transition);
 }
 
 .card-1 .h2 {

@@ -14,6 +14,12 @@
   max-width: var(--max-width);
 }
 
+.no-items {
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  text-align: center;
+}
+
 @media screen and (min-width: 800px) {
   .menu-sections {
     display: grid;
@@ -22,5 +28,9 @@
   .menu-sections > .img {
     margin-top: 6rem;
     margin-left: 2rem;
+  }
+  .no-items {
+    margin-top: 6rem;
+    text-align: left;
   }
 }

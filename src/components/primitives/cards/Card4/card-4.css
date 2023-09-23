@@ -13,6 +13,15 @@
   max-width: var(--max-width);
 }
 
+.card-4 .img {
+  transition: var(--transition);
+}
+
+.card-4:hover .img,
+.card-4:focus .img {
+  transform: scale(1.2);
+}
+
 .card-4::before {
   content: "";
   position: absolute;

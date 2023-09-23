@@ -16,7 +16,9 @@ const MenuBar = ({ links, active, query }) => {
               key={link.id}
               as={Link}
               to={`/menu?${category}`}
-              className={query ? "" : link.name === active ? "active h3" : "h3"}
+              className={
+                query ? "h3" : link.name === active ? "active h3" : "h3"
+              }
               variant="red-text"
             >
               {link.name}

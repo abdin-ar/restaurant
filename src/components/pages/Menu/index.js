@@ -33,7 +33,11 @@ const Menu = () => {
         query={query}
       />
       <div className="menu-sections">
-        <MenuItems items={viewItems} card={Card4} />
+        {viewItems.length === 0 ? (
+          <h2 className="h2 no-items">No items match your query!</h2>
+        ) : (
+          <MenuItems items={viewItems} card={Card4} />
+        )}
         <img
           src="/images/large/choose.png"
           alt="Choose your meal"
