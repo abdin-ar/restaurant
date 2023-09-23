@@ -4,6 +4,21 @@ import "./modal.css";
 
 const Modal = () => {
   const { state, closeModal } = useGlobalContext();
+  if (!state.modalContent) {
+    return (
+      <div className={`overlay ${state.isModalOpen ? "appear" : ""}`}>
+        <Button
+          variant="transparent"
+          className="modal-btn"
+          onClick={closeModal}
+        >
+          <i className="fas fa-times"></i>
+        </Button>
+        <div className="modal"></div>
+      </div>
+    );
+  }
+
   const content = state.modalContent;
 
   return (

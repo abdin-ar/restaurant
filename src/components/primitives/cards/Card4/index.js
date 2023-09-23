@@ -8,7 +8,15 @@ const Card4 = ({ id, name, description, price, img }) => {
   const { state, toggleFavorite, openModal, setModalContent } =
     useGlobalContext();
   const isFavorited = state.favorites.includes(id);
-  const open = () => {
+  const open = (e) => {
+    if (
+      e.target.className.baseVal === "svg" ||
+      e.target.className.baseVal === "svgp" ||
+      e.target.className.baseVal === "like-btn"
+    ) {
+      return;
+    }
+
     openModal();
     setModalContent({ name, price, description, img });
   };
