@@ -303,14 +303,8 @@ b,
   position: absolute;
   width: 1px;
   height: 1px;
-  --padding-block-start: 0;
-  --padding-block-end: 0;
-  --padding-inline-start: 0;
-  --padding-inline-end: 0;
-  --margin-block-start: -1px;
-  --margin-block-end: -1px;
-  --margin-inline-start: -1px;
-  --margin-inline-end: -1px;
+  padding: 0;
+  margin: -1px;
   overflow: hidden;
   clip: rect(0, 0, 0, 0);
   white-space: nowrap;

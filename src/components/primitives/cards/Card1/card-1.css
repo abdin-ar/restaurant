@@ -6,6 +6,7 @@
   position: relative;
   isolation: isolate;
   height: 16rem;
+  max-width: var(--max-width);
 }
 
 .card-1::before {

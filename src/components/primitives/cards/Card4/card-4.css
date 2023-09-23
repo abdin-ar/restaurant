@@ -10,6 +10,7 @@
   grid-template-rows: auto 1fr auto;
   isolation: isolate;
   cursor: pointer;
+  max-width: var(--max-width);
 }
 
 .card-4::before {

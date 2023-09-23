@@ -11,6 +11,7 @@
   width: 27rem;
   margin: 1rem auto;
   border-radius: var(--border-radius-lg);
+  max-width: var(--max-width);
 }
 
 @media screen and (min-width: 800px) {

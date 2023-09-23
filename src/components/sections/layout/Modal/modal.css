@@ -26,7 +26,19 @@
   top: calc(50% + 2rem);
   left: 50%;
   border-radius: 3rem;
-  padding: 4rem;
+  padding: 4rem 0;
+}
+
+.modal-content::before {
+  content: "";
+  position: absolute;
+  width: 110%;
+  bottom: 5%;
+  height: 70%;
+  left: -5%;
+  background-color: #fff;
+  z-index: -1;
+  border-radius: var(--border-radius-lg);
 }
 
 .overlay.appear {
@@ -42,6 +54,10 @@
   width: 20rem;
   max-width: 80%;
   margin: 0 auto;
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+  min-height: 100%;
+  position: relative;
 }
 
 .modal-content > * {
@@ -75,4 +91,13 @@
   transform: translateX(-50%);
   z-index: 205;
   background: #fff !important;
+}
+
+.modal > .svg {
+  width: 6.5rem;
+  fill: var(--red-color);
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
 }

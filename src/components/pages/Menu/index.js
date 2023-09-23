@@ -1,8 +1,8 @@
 import { useSearchParams } from "react-router-dom";
-import useGlobalContext from "../../context/context";
-import MenuBar from "../sections/menu/MenuBar";
-import MenuItems from "../primitives/side-scrollers/MenuItems";
-import Card4 from "../primitives/cards/Card4";
+import useGlobalContext from "../../../context/context";
+import MenuBar from "../../sections/menu/MenuBar";
+import MenuItems from "../../primitives/side-scrollers/MenuItems";
+import Card4 from "../../primitives/cards/Card4";
 import "./menu.css";
 
 const Menu = () => {
