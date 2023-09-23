@@ -1,0 +1,42 @@
+.side-scroller-1 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: calc(var(--max-width) + 8rem);
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.side-scroller-1 .prev-next {
+  padding: 0;
+}
+
+.side-scroller-1 .prev-next .svg {
+  fill: var(--active-button-color);
+  width: 1.2rem;
+}
+.media-scroller {
+  margin: 0 auto;
+  width: var(--max-width);
+  display: grid;
+  gap: 3rem;
+  grid-auto-flow: column;
+  grid-auto-columns: 14rem;
+  overflow-x: scroll;
+  overscroll-behavior-inline: contain;
+  padding: 1rem 0;
+  padding-top: 0;
+}
+
+.snaps-inline {
+  scroll-snap-type: inline mandatory;
+  scroll-padding-inline: 1rem;
+}
+
+.snaps-inline > * {
+  scroll-snap-align: start;
+}
+
+.media-scroller::-webkit-scrollbar {
+  display: none;
+}

@@ -1,0 +1,61 @@
+.card-4 {
+  padding: 1rem;
+  padding-top: 0;
+  height: 30rem;
+  width: 17rem;
+  position: relative;
+  display: grid;
+  justify-content: center;
+  gap: 1rem;
+  grid-template-rows: auto 1fr auto;
+  isolation: isolate;
+  cursor: pointer;
+}
+
+.card-4::before {
+  content: "";
+  position: absolute;
+  background-color: var(--item-bg-color);
+  border-radius: var(--border-radius-lg);
+  height: 19rem;
+  bottom: 0;
+  width: 100%;
+  z-index: -1;
+}
+
+.card-4 .line {
+  border-top: 1px solid var(--scroll-bar-color-light);
+  width: 90%;
+  margin: 0.7rem auto;
+}
+
+.card-4 .h3 {
+  color: var(--heading-color);
+}
+
+.card-4 .price {
+  width: 100%;
+  background-color: var(--bg-color);
+  font-weight: var(--heading-font-weight);
+  text-align: center;
+  padding: 0.8rem 0.5rem;
+  color: var(--heading-color);
+  font-size: var(--small-font-size);
+  border-radius: var(--border-radius);
+}
+
+.card-4 .like-btn {
+  padding: 0;
+}
+
+.card-4 .like-btn .svg {
+  width: 1.5rem;
+  fill: var(--red-color);
+}
+
+.h3andlike {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}

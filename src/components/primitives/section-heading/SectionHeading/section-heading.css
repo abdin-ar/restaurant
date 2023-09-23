@@ -1,0 +1,15 @@
+.section-heading {
+  width: var(--max-width);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1rem 0.5rem;
+  margin: 2rem auto 1rem;
+  flex-wrap: wrap;
+}
+
+@media screen and(min-width:300px) {
+  .section-heading {
+    flex-wrap: nowrap;
+  }
+}

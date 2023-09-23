@@ -1,0 +1,92 @@
+/* basic button classes */
+.btn {
+  padding: 0.75rem 1.25rem;
+  text-decoration: none;
+  user-select: none;
+  cursor: pointer;
+  border: 2px solid transparent;
+  border-radius: var(--border-radius-sm);
+  letter-spacing: var(--letter-spacing);
+  transition: var(--transition);
+  text-transform: capitalize;
+  font-weight: var(--button-font-weight);
+  display: inline-flex;
+  gap: 0.5rem;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  min-width: 24px;
+  min-height: 24px;
+  text-wrap: balance;
+  text-align: center;
+  color: inherit;
+  background-color: transparent;
+}
+
+.btn.full-width {
+  width: 100%;
+  max-width: none;
+}
+
+.btn.red-bordered {
+  color: var(--navbar-text-color);
+  border-color: var(--light-grey-color);
+  border-width: 3px;
+}
+.btn.red-bordered:hover,
+.btn.red-bordered:focus {
+  color: var(--heading-color);
+  border-color: var(--heading-color);
+}
+.btn.red-bordered.active {
+  color: var(--red-color);
+  border-color: var(--red-color);
+}
+
+.btn.red-text {
+  color: var(--navbar-text-color);
+}
+.btn.red-text:hover,
+.btn.red-text:focus {
+  color: var(--heading-color);
+}
+.btn.red-text.active {
+  color: var(--red-color);
+  background-color: var(--light-red-color);
+}
+
+.btn.red-filled-bordered {
+  color: var(--red-color);
+  border-color: var(--red-color);
+  border-width: 3px;
+  background-color: var(--light-red-color);
+}
+.btn.red-filled-bordered:hover,
+.btn.red-filled-bordered:focus {
+  color: var(--item-bg-color);
+  background-color: var(--red-color);
+}
+
+.btn.grey {
+  color: hsl(var(--grey-base), var(--grey-10));
+  background-color: hsl(var(--grey-base), var(--grey-80));
+}
+.btn.grey:hover,
+.btn.grey:focus {
+  background-color: hsl(var(--grey-base), var(--grey-70));
+}
+.dark-mode .btn.grey:focus,
+.dark-mode .btn.grey:hover {
+  background-color: hsl(var(--grey-base), var(--grey-70));
+}
+
+.btn.transparent {
+  text-shadow: var(--set-text-shadow-2);
+  background-color: transparent;
+  color: hsl(var(--grey-base), var(--grey-5));
+}
+.btn.transparent:hover,
+.btn.transparent:focus {
+  text-shadow: var(--set-text-shadow-2-hover);
+  color: hsl(var(--primary-base), var(--primary-60));
+}

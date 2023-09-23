@@ -1,0 +1,319 @@
+:root {
+  /* colors */
+  --heading-color: rgb(57, 63, 82);
+  --text-color: rgb(106, 110, 142);
+  --bg-color: rgb(241, 243, 246);
+  --card-button-color: rgb(240, 244, 250);
+  --search-bar-color: rgb(242, 249, 255);
+  --banner-bg-color: rgb(0, 0, 0);
+  --item-bg-color: rgb(255, 255, 255);
+  --light-blue-color: rgb(226, 235, 244);
+  --active-button-color: rgb(66, 126, 255);
+  --green-color: rgb(47, 102, 5);
+  --red-color: rgb(228, 0, 43);
+  --light-red-color: rgb(254, 242, 244);
+  --light-grey-color: rgb(245, 245, 247);
+  --mid-grey-color: rgb(217, 217, 217);
+  --dark-grey-color: rgb(181, 182, 185);
+  --navbar-text-color: rgb(173, 174, 177);
+  --footer-color: rgb(57, 63, 82);
+  --footer-text-color-dark: rgb(173, 174, 177);
+  --footer-text-color-light: rgb(255, 255, 255);
+  --scroll-bar-color-dark: rgb(173, 174, 177);
+  --scroll-bar-color-light: rgb(217, 217, 217);
+
+  /* font family basic */
+  --ff-serif: serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol",
+    "Noto Color Emoji";
+  --ff-sans-serif: Arial, Tahoma, Roboto, Helvetica, system-ui, -apple-system,
+    "Segoe UI", "Helvetica Neue", "Noto Sans", "Liberation Sans", sans-serif,
+    "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  --ff-special: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  --ff-arabic: Tahoma, Calibri, Arial;
+  /* font */
+  --html-font-size: 80%;
+  --footer-font-size: 1.05rem;
+  --heading-font-size: 1rem;
+  --heading-font-family: var(--ff-sans-serif);
+  --heading-font-weight: bold;
+  --special-font-size: 1rem;
+  --special-font-family: var(--ff-special);
+  --special-font-weight: 400;
+  --body-font-size: 0.9rem;
+  --body-font-family: var(--ff-sans-serif);
+  --body-font-weight: 400;
+  --small-font-size: 0.8rem;
+  --large-icon-font-size: 1rem;
+  --button-font-weight: 600;
+  --letter-spacing: 0.0625rem;
+  --heading-line-height: 1.2;
+  --special-line-height: 1;
+  --body-line-height: 1.5;
+
+  /* layout and animation */
+  --max-width: min(1575px, 82vw);
+  --max-width2: min(1735px, 90.5vw);
+  --fixed-width: min(816px, 80vw);
+  --text-width: 40em;
+  --nav-height: calc((var(--body-font-size) * 3) + 1.5rem);
+  --nav-btn-height: 2.8rem;
+  /* --border-radius-sm: 0.25rem; */
+  --border-radius-sm: 0.6rem;
+  --border-radius: 0.6rem;
+  --border-radius-lg: 1rem;
+  --transition-1-duration: 0.3s;
+  --transition-2-duration: 0.5s;
+  --transition-1-ease: ease-in-out;
+  --transition-2-ease: ease-in-out;
+
+  /* shadows */
+  --box-shadow-1: 0 1px 3px 0 rgba(0, 0, 0, 0.1),
+    0 1px 2px 0 rgba(0, 0, 0, 0.06);
+  --box-shadow-1-hover: 0 10px 15px -3px rgba(0, 0, 0, 0.1),
+    0 4px 6px -2px rgba(0, 0, 0, 0.05);
+  --box-shadow-2: 0 4px 6px -1px rgba(0, 0, 0, 0.1),
+    0 2px 4px -1px rgba(0, 0, 0, 0.06);
+  --box-shadow-2-hover: 0 20px 25px -5px rgba(0, 0, 0, 0.1),
+    0 10px 10px -5px rgba(0, 0, 0, 0.04);
+  --box-shadow-3: 0 1px 3px 0 rgba(0, 0, 0, 0.1),
+    0 1px 2px 0 rgba(0, 0, 0, 0.06);
+  --box-shadow-3-hover: 0 1px 3px 0 rgba(0, 0, 0, 0.1),
+    0 1px 2px 0 rgba(0, 0, 0, 0.06);
+  --box-shadow-4: 0 4px 6px -1px rgba(0, 0, 0, 0.1),
+    0 2px 4px -1px rgba(0, 0, 0, 0.06);
+  --box-shadow-4-hover: 0 4px 6px -1px rgba(0, 0, 0, 0.1),
+    0 2px 4px -1px rgba(0, 0, 0, 0.06);
+  --nav-box-shadow: 0px 4px 3px 0 rgba(0, 0, 0, 0.25),
+    0 2px 2px 0 rgba(0, 0, 0, 0.1);
+  /* end of settings */
+
+  /* variables */
+  --text-justify-start: start;
+  --text-justify-end: end;
+  --transition: var(--transition-1-duration) var(--transition-1-ease) all;
+  --transition-2: var(--transition-2-duration) var(--transition-2-ease) all;
+}
+
+@media screen and (min-width: 270px) {
+  :root {
+    --html-font-size: 100%;
+  }
+}
+
+@media screen and (min-width: 680px) {
+  :root {
+    --text-justify-start: justify;
+    --text-justify-end: justify;
+  }
+}
+
+*,
+::after,
+::before {
+  box-sizing: border-box;
+  font: inherit;
+  margin: 0;
+  padding: 0;
+}
+
+:focus {
+  outline: transparent;
+}
+
+html {
+  font-size: var(--html-font-size);
+}
+
+body {
+  background-color: var(--bg-color);
+  font-family: var(--body-font-family);
+  font-weight: var(--body-font-weight);
+  line-height: var(--body-line-height);
+  font-size: var(--body-font-size);
+  color: var(--text-color);
+  text-rendering: optimizeSpeed;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+html,
+body,
+#root {
+  min-height: 100vh;
+}
+
+.body,
+#root {
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+}
+
+p {
+  max-width: var(--text-width);
+}
+
+.h1,
+.h2,
+.h3,
+.h4,
+.h5,
+.h6 {
+  margin: 0;
+  font-family: var(--heading-font-family);
+  line-height: var(--heading-line-height);
+}
+
+/*.h1 {
+  font-size: var(--heading-font-size);
+  text-transform: capitalize;
+  font-weight: var(--heading-font-weight);
+}*/
+.h2 {
+  font-size: var(--heading-font-size);
+  text-transform: uppercase;
+  font-weight: var(--heading-font-weight);
+}
+.h3 {
+  font-size: var(--heading-font-size);
+  text-transform: capitalize;
+  font-weight: var(--heading-font-weight);
+}
+.h4 {
+  font-size: var(--heading-font-size);
+}
+/*.h5 {
+  font-size: var(--h5-font-size);
+}*/
+.h6 {
+  font-size: var(--small-font-size);
+  text-transform: uppercase;
+  font-weight: var(--heading-font-weight);
+}
+
+.s1,
+.s2,
+.s3,
+.s4,
+.s5,
+.s6 {
+  margin: 0;
+  font-family: var(--special-font-family);
+  font-weight: var(--special-font-weight);
+  line-height: var(--special-line-height);
+}
+
+/*.s1 {
+  font-size: var(--s1-font-size);
+}
+.s2 {
+  font-size: var(--s2-font-size);
+}
+.s3 {
+  font-size: var(--s3-font-size);
+}
+.s4 {
+  font-size: var(--s4-font-size);
+}
+.s5 {
+  font-size: var(--s5-font-size);
+}
+.s6 {
+  font-size: var(--s6-font-size);
+}
+
+small,
+.smaller-text {
+  font-size: var(--smaller-text);
+}
+.larger-text {
+  font-size: var(--larger-text);
+}*/
+
+button,
+a {
+  cursor: pointer;
+}
+
+a:not(.a) {
+  text-decoration: none;
+}
+
+.a {
+  text-decoration: underline;
+  cursor: pointer;
+  display: inline;
+  border: none;
+  transition: var(--transition);
+}
+
+ul:not(.ul) {
+  list-style-type: none;
+  padding: 0;
+}
+
+.ul {
+  list-style-type: disc;
+  margin: 1em 0;
+  padding-left: 2.5em;
+}
+
+.img,
+.svg {
+  width: 100%;
+  display: block;
+  object-fit: cover;
+}
+
+::placeholder {
+  font-family: inherit;
+  color: hsl(var(--grey-base), var(--grey-50));
+}
+
+.clearfix::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+b,
+.b {
+  font-weight: bold !important;
+}
+
+.i {
+  font-style: italic !important;
+}
+
+/* +++++++++++++++ end of GLOBAL RESET +++++++++++++++ */
+/* ++++++++++++++++++++ OTHER GLOBAL STYLES ++++++++++++++++++++ */
+/* remove animations for people who've turned them off */
+@media (prefers-reduced-motion: reduce) {
+  *,
+  ::before,
+  ::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+/* sr: screen reader -- for visually impaired people */
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  --padding-block-start: 0;
+  --padding-block-end: 0;
+  --padding-inline-start: 0;
+  --padding-inline-end: 0;
+  --margin-block-start: -1px;
+  --margin-block-end: -1px;
+  --margin-inline-start: -1px;
+  --margin-inline-end: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+}
+/* +++++++++++++++ end of OTHER GLOBAL STYLES +++++++++++++++ */

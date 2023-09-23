@@ -1,0 +1,16 @@
+.toggle-btn {
+  padding: 1rem 0;
+  height: var(--nav-btn-height);
+}
+
+.toggle-btn .svg {
+  height: var(--large-icon-font-size);
+  width: auto;
+  fill: var(--heading-color);
+  transition: var(--transition);
+}
+
+.toggle-btn:focus .svg,
+.toggle-btn:hover .svg {
+  fill: var(--red-color);
+}

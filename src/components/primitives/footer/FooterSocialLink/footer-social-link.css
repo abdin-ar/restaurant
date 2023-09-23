@@ -1,0 +1,13 @@
+.footer-social-link {
+  background-color: transparent;
+  color: var(--footer-text-color-light);
+  font-size: calc(var(--heading-font-size) * 1.25);
+  transition: var(--transition);
+  padding: 0;
+  margin: 0;
+}
+
+.footer-social-link:focus,
+.footer-social-link:hover {
+  color: var(--footer-text-color-dark);
+}

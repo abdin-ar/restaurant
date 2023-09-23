@@ -1,0 +1,6 @@
+.footer-logo {
+  max-width: 5.2rem;
+  fill: var(--footer-text-color-light);
+  height: max(var(--heading-font-size), 2rem);
+  transition: var(--transition);
+}

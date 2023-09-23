@@ -1,0 +1,20 @@
+.section-link {
+  color: var(--active-button-color);
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.section-link span {
+  font: inherit;
+}
+
+.section-link .svg {
+  width: 1rem;
+  fill: var(--active-button-color);
+  transition: var(--transition);
+}
+
+.section-link:hover .svg {
+  transform: translateX(0.5rem);
+}

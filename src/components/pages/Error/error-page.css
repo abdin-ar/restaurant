@@ -1,0 +1,8 @@
+.error-page {
+  max-width: var(--max-width);
+  margin: 1rem auto;
+}
+
+.error-page p {
+  margin: 1rem 0 2rem;
+}

@@ -1,0 +1,5 @@
+.nav-cta {
+  padding: 1rem;
+  height: var(--nav-btn-height);
+  font-family: var(--ff-arabic);
+}

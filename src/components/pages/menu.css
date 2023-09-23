@@ -1,0 +1,25 @@
+.menu-sections {
+  display: flex;
+  width: var(--max-width2);
+  margin-left: auto;
+  margin-right: auto;
+  flex-direction: column;
+  margin-bottom: 2rem;
+}
+
+.menu-sections > .img {
+  width: 27rem;
+  margin: 1rem auto;
+  border-radius: var(--border-radius-lg);
+}
+
+@media screen and (min-width: 800px) {
+  .menu-sections {
+    display: grid;
+    grid-template-columns: 1fr auto;
+  }
+  .menu-sections > .img {
+    margin-top: 6rem;
+    margin-left: 2rem;
+  }
+}

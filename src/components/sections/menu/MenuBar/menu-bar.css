@@ -1,0 +1,43 @@
+.menu-bar {
+  max-width: var(--max-width);
+  width: 66rem;
+  background-color: var(--item-bg-color);
+  margin: 1rem auto;
+  padding: 0.5rem 1rem;
+  border-radius: var(--border-radius);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.menu-links {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  flex-wrap: wrap;
+}
+
+.menu-links .btn {
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+}
+
+@media screen and (min-width: 1030px) {
+  .menu-links {
+    flex-wrap: nowrap;
+    justify-content: space-between;
+  }
+}
+
+@media screen and (min-width: 1255px) {
+  .menu-bar {
+    justify-content: space-between;
+    flex-direction: row;
+  }
+  .menu-links {
+    justify-content: flex-start;
+  }
+}

@@ -1,0 +1,17 @@
+.nav-logo-link {
+  display: grid;
+  place-content: center;
+  max-height: calc(var(--nav-height) - 0.5rem);
+  margin: 0;
+  margin-right: 0.5rem;
+}
+
+.nav-logo-link .svg {
+  max-width: 5.2rem;
+}
+
+.nav-logo {
+  fill: var(--red-color);
+  height: max(var(--heading-font-size), 2rem);
+  transition: var(--transition);
+}

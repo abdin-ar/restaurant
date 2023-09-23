@@ -1,0 +1,14 @@
+.footer-links {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: var(--max-width);
+  gap: 1rem;
+  flex-direction: column;
+}
+
+@media screen and (min-width: 680px) {
+  .footer-links {
+    flex-direction: row;
+  }
+}

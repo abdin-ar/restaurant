@@ -1,0 +1,11 @@
+.footer-social-links {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  overflow: hidden;
+  flex-wrap: wrap;
+  margin: 0;
+  padding: 0;
+  width: 12rem;
+  max-width: var(--max-width);
+}

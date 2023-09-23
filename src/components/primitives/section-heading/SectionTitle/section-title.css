@@ -1,0 +1,37 @@
+.section-title {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.section-title h2::after {
+  position: absolute;
+  content: "";
+  height: 3px;
+  width: 2.5rem;
+  background-color: var(--red-color);
+  bottom: -0.5rem;
+  left: 0;
+  transition: var(--transition);
+}
+
+.section-title h2 {
+  white-space: nowrap;
+  color: var(--heading-color);
+  transition: var(--transition);
+  position: relative;
+}
+
+.section-title .img {
+  height: 1.5rem;
+  margin-left: 0.8rem;
+  transition: var(--transition);
+}
+
+.section-title:hover h2::after {
+  width: 100%;
+}
+
+.section-title:hover .img {
+  transform: scale(1.3);
+}

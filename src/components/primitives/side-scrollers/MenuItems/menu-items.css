@@ -1,0 +1,8 @@
+.menu-items {
+  margin: 0 auto;
+  display: flex;
+  gap: 2rem;
+  flex-wrap: wrap;
+  padding: 1rem 0;
+  justify-content: center;
+}

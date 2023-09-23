@@ -1,0 +1,4 @@
+.footer-label {
+  max-width: 4.5rem;
+  fill: var(--footer-text-color-light);
+}

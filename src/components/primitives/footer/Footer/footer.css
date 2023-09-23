@@ -1,0 +1,29 @@
+.footer {
+  padding: 2rem 0 0;
+  width: 100%;
+  background-color: var(--footer-color);
+}
+
+.footer-center {
+  width: var(--max-width);
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+}
+
+.footer p {
+  padding: 0;
+  margin: 0;
+  text-align: center;
+  color: var(--footer-text-color-dark);
+  font-weight: var(--heading-font-weight);
+  font-size: var(--footer-font-size);
+  line-height: var(--heading-line-height);
+}
+
+.footer .copyright {
+  font-weight: var(--body-font-weight);
+}

@@ -1,0 +1,22 @@
+.banner {
+  width: 100%;
+  background-color: var(--banner-bg-color);
+}
+
+.banner .img {
+  width: var(--max-width);
+  margin: 0 auto;
+}
+
+.banner .large {
+  display: none;
+}
+
+@media screen and (min-width: 720px) {
+  .banner .large {
+    display: block;
+  }
+  .banner .small {
+    display: none;
+  }
+}

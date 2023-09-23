@@ -1,0 +1,9 @@
+.nav-btn {
+  z-index: 200;
+  width: 3rem;
+  font-size: 1.25em;
+  display: grid;
+  place-content: center;
+  transition: var(--transition);
+  padding: 1rem 0.75rem;
+}

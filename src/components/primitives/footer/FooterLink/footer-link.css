@@ -1,0 +1,10 @@
+.footer-link {
+  color: var(--footer-text-color-light);
+  font-size: var(--heading-font-size);
+  transition: var(--transition);
+}
+
+.footer-link:focus,
+.footer-link:hover {
+  color: var(--footer-text-color-dark);
+}
