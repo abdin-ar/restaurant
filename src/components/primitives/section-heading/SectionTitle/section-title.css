@@ -26,6 +26,7 @@
   height: 1.5rem;
   margin-left: 0.8rem;
   transition: var(--transition);
+  width: auto;
 }
 
 .section-title:hover h2::after {
